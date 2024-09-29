@@ -13,7 +13,7 @@ root.render(
   <GlobalProvider>
     <Router>
       <Routes>
-        <Route path="/" element={<App1 />} />
+        <Route path="/my-app" element={<App1 />} />
         <Route path="/sign-in" element={<SignInSignUp />} /> {/* Add this line */}
 
         <Route path="/home" element={<App />} />
