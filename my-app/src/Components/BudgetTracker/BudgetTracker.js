@@ -6,7 +6,7 @@ import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 const BudgetTracker = () => {
     const { savingsPerBudget } = useGlobalContext();
 
-    const COLORS = ['#39ff14', '#ff073a', '#ffd700']; // Neon green, red, and yellow
+    const COLORS = ['#39ff14', '#ff073a', '#ffd700']; // Neon colors for the pie chart
 
     const renderPieChart = (budget) => {
         const data = [
@@ -16,15 +16,14 @@ const BudgetTracker = () => {
         ];
 
         return (
-            <PieChart width={150} height={150}>  {/* Increased size */}
+            <PieChart width={150} height={150}>
                 <Pie
                     data={data}
                     dataKey="value"
                     cx="50%"
                     cy="50%"
                     innerRadius={40}
-                    outerRadius={60}  // Increased radius for better visibility
-                    fill="#8884d8"
+                    outerRadius={60}
                     paddingAngle={5}
                     label
                 >
@@ -121,20 +120,11 @@ const BudgetTrackerStyled = styled.div`
         }
     }
 
-    .status {
-        font-weight: bold;
-        font-size: 0.9em; /* Smaller font size */
-        color: ${({ status }) => getStatusColor(status)};
-        margin-top: 5px;
-    }
-
     .visuals {
-        flex: 1;
+        flex: 1; /* Allow visuals to take less space */
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px; /* Increased chart size */
-        height: 150px;
     }
 `;
 

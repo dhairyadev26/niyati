@@ -145,7 +145,7 @@ const BudgetFormStyled = styled.form`
             margin-bottom: 0.5rem;
             font-weight: bold;
             color: #00ffab; /* Neon color */
-            text-shadow: 0 0 3px #00ffab, 0 0 5px #00ffab; /* Reduced glow */
+            text-shadow: 0 0 1px #00ffab, 0 0 5px #00ffab; /* Reduced glow */
         }
 
         input, select {

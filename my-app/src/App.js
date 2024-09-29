@@ -9,7 +9,6 @@ import Income from './Components/Income/Income';
 import Expenses from './Components/Expenses/Expenses';
 import BudgetPage from './Components/BudgetTracker/BudgetPage';
 import GoalSetter from './Components/GoalSetter/GoalSetter';
-// Removed BudgetProvider import as we no longer need it
 
 function App() {
   const [active, setActive] = useState(1);
@@ -33,9 +32,9 @@ function App() {
         return <Income incomeData={incomeData} addIncome={addIncome} />;
       case 4:
         return <Expenses expenseData={expenseData} addExpense={addExpense} />;
-      case 5: // Budget Tracker
-        return <BudgetPage />; // No need to wrap BudgetPage with BudgetProvider
-      case 6: // Goal Setter
+      case 5:
+        return <BudgetPage />;
+      case 6:
         return <GoalSetter />;
       default:
         return <Dashboard />;

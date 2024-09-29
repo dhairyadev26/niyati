@@ -24,7 +24,7 @@ const BudgetPageStyled = styled.div`
 
     h1 {
         color: #00ffab; /* Neon color */
-        text-shadow: 0 0 5px #00ffab, 0 0 10px #00ffab; /* Neon glow */
+        text-shadow: 0 0 1px #00ffab, 0 0 10px #00ffab; /* Neon glow */
         margin-bottom: 1rem; /* Space below the title */
     }
 `;
